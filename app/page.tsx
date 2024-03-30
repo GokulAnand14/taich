@@ -9,7 +9,7 @@ export default function Chat() {
         id: '',
         content: `You are GAlliBOT, a helpful chatbot mady by GAllium who expains complex concepts in a 5year old level, use emojis`,
         role: 'system'
-      },
+      }
     ]
   });
 
@@ -20,7 +20,7 @@ export default function Chat() {
               .filter((m) => m.role !== 'system')
               .map((m) => (
                 <div key={m.id} className="whitespace-pre-wrap p-5">
-                  {m.role === 'user' ? 'You: ' : 'teAIch: '}
+                  {m.role === 'user' ? 'User: ' : 'AI: '}
                   {m.content}
                   <hr/>
                 </div>
