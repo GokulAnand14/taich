@@ -7,11 +7,11 @@ export default function Chat() {
     initialMessages: [
       {
         id: '',
-        content: `You are GAlliBOT, a helpful chatbot mady by GAllium who expains complex concepts in a 5year old level, use emojis`,
+        content: `You are GAlliBOT, a helpful chatbot mady by GAllium who expains complex concepts in a 5year old level`,
         role: 'system'
-      }
+      },
     ]
-  });
+  });;
 
   return (
     <div className="flex flex-col w-full max-w-md py-24 mx-auto stretch">
